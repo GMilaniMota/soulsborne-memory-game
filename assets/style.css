@@ -19,6 +19,7 @@ body {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
 }
 
 .card {
@@ -29,6 +30,8 @@ body {
     box-shadow: 1px 1px 5px 2px black;
     cursor: pointer;
     transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
 }
 
 .card:active {
@@ -46,5 +49,13 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    backface-visibility: hidden;
 }
 
+.card-front {
+    transform: rotateY(180deg);
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
