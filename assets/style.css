@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Cinzel', serif;
 }
 
 body {
@@ -13,9 +16,18 @@ body {
     background-repeat: no-repeat;
 }
 
-.memory-game {
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    position: relative;
     height: 640px;
     width: 640px;
+}
+
+.memory-game {
+    height: inherit;
+    width: inherit;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -58,4 +70,36 @@ body {
 
 .card.flip {
     transform: rotateY(180deg);
+}
+
+.buttons {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button {
+    width: 60%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 15px;
+    position: absolute;
+    border: none;
+    box-shadow: 1px 1px 5px 2px black;
+    background-color: rgb(54, 54, 54);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background-color: rgb(31, 31, 31);
+}
+
+.new-game {
+    visibility: hidden;
 }

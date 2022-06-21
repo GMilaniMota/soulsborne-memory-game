@@ -4,62 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="assets/style.css">
     <title>Memory Game</title>
 </head>
 <body>
+    <div class="container">
+        <main class="memory-game">
+            <div class="card" data-card="abyss-watcher">
+                    <img src="assets/img/abyss-watcher.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="artorias">
+                    <img src="assets/img/artorias.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="ornstein">
+                    <img src="assets/img/ornstein.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="soul-of-cinder">
+                    <img src="assets/img/soul-of-cinder.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="lady-maria">
+                    <img src="assets/img/lady-maria.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="father-gascoigne">
+                    <img src="assets/img/father-gascoigne.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="abyss-watcher">
+                    <img src="assets/img/abyss-watcher.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="artorias">
+                    <img src="assets/img/artorias.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="ornstein">
+                    <img src="assets/img/ornstein.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="soul-of-cinder">
+                    <img src="assets/img/soul-of-cinder.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="lady-maria">
+                    <img src="assets/img/lady-maria.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+                <div class="card" data-card="father-gascoigne">
+                    <img src="assets/img/father-gascoigne.jpg" alt="front face" class="card-front">
+                    <img src="assets/img/bonfire.png" alt="back face" class="card-back">
+                </div>
+            </main>
+            
+            <div class="buttons">
+                <button id="start" class="start">Start</button>
+                <button id="new-game" class="new-game">New Game</button>
+            </div>
+    </div>
     
-    <main class="memory-game">
-        <div class="card">
-            <img src="assets/img/abyss-watcher.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/artorias.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/ornstein.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/soul-of-cinder.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/lady-maria.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/father-gascoigne.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/abyss-watcher.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/artorias.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/ornstein.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/soul-of-cinder.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/lady-maria.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-        <div class="card">
-            <img src="assets/img/father-gascoigne.jpg" alt="front face" class="card-front">
-            <img src="assets/img/bonfire.png" alt="back face" class="card-back">
-        </div>
-
-    </main>
 
     <script src="assets/main.js"></script>
 </body>
